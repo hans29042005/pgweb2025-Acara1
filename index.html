@@ -1,56 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html> <!-- Mendefinisikan dokumen ini sebagai HTML5 -->
+<html lang="en"> <!-- Tag pembuka HTML, atribut lang="en" menandakan bahasa Inggris -->
+
+<head> <!-- Berisi metadata, title, link CSS/JS -->
+    <meta charset="UTF-8"> <!-- Menentukan encoding karakter dokumen -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Membuat halaman responsif sesuai ukuran layar -->
     <!--Nama Web-->
-    <title>Acara 1 | HTML CSS</title>
+    <title>Acara 1 | HTML CSS</title> <!-- Judul website -->
+
+    <link rel="stylesheet" href="app.css"> <!-- (Baru) -->
 </head>
-<body>
-    <main>
+
+<body> <!-- Bagian body, berisi konten yang tampil di browser -->
+    <main> <!-- Elemen utama dari konten halaman -->
         <!--Judul-->
-        <h1>Kota Bantul</h1>
+        <h1 class="p2">Kota Bantul</h1> <!-- Heading utama dengan teks berwarna pink (Baru)-->
 
         <!--Sub Judul-->
-        <h3>Daerah Instimewa Yogyakarta</h3>
-        <hr>
+        <h3>Daerah Instimewa Yogyakarta</h3> <!-- Heading level 3 (subjudul) (Baru) -->
+        <hr> <!-- Garis horizontal pemisah -->
 
         <!--Deskripsi-->
-        <p>Kabupaten Bantul (bahasa Jawa: ꦧꦤ꧀ꦠꦸꦭ꧀, pelafalan dalam bahasa Indonesia: [ˈbantʊl]) 
+        <p id="1">Kabupaten Bantul (bahasa Jawa: ꦧꦤ꧀ꦠꦸꦭ꧀, pelafalan dalam bahasa Indonesia: [ˈbantʊl]) 
             adalah sebuah wilayah kabupaten yang terletak di Provinsi Daerah Istimewa Yogyakarta, Indonesia. 
-            Ibu kotanya adalah Kapanewon Bantul. Pada akhir tahun 2024, jumlah penduduk Bantul sebanyak 980.269 jiwa.</p>
-        <p>Semboyan pembangunan kabupaten ini adalah Projotamansari, yang merupakan singkatan dari 
+            Ibu kotanya adalah Kapanewon Bantul. Pada akhir tahun 2024, jumlah penduduk Bantul sebanyak 980.269 jiwa.</p> <!-- Paragraf pertama (Baru)-->
+        <p class="p1">Semboyan pembangunan kabupaten ini adalah Projotamansari, yang merupakan singkatan dari 
             Produktif-Profesional, Ijo royo royo, Tertib, Aman, Sehat, dan Asri. Pada 27 Mei 2006, 
             gempa bumi besar berkekuatan 5,9 skala Richter mengakibatkan kerusakan yang besar terhadap 
             daerah ini dan kematian sedikitnya 3.000 penduduk Bantul. Daerah yang terkena dampak terparah 
-            dari gempa tersebut adalah Pundong dan Imogiri.</p>
+            dari gempa tersebut adalah Pundong dan Imogiri.</p> <!-- Paragraf kedua (Baru)-->
         <hr>
 
         <!--Tabel Jumlah Penduduk-->
-        <table>
-            <tr>
-                <th>No</th>
-                <th>Jenis Kelamin</th>
-                <th>Jumlah</th>
-            </tr>
-                <td>1</td>
-                <td>Laki-laki</td>
-                <td>488.162 jiwa</td>
-            </tr>
-                <td>2</td>
-                <td>Perempuan</td>
-                <td>492.107 jiwa</td>
-            </tr>
-                <td>3</td>
-                <td>Total</td>
-                <td>980.269 jiw</td>
-        </table>
+        <table> <!-- Tag pembuka tabel -->
+            <tr> <!-- Baris tabel -->
+                <th>No</th> <!-- Header kolom: Nomor -->
+                <th>Jenis Kelamin</th> <!-- Header kolom: Jenis Kelamin -->
+                <th>Jumlah</th> <!-- Header kolom: Jumlah -->
+            </tr> 
+                <td>1</td> <!-- Isi sel tabel: nomor 1 -->
+                <td>Laki-laki</td> <!-- Isi sel tabel: Laki-laki -->
+                <td>488.162 jiwa</td> <!-- Isi sel tabel: jumlah -->
+            </tr> <!-- Penutup baris -->
+                <td>2</td> <!-- Isi sel tabel: nomor 2 -->
+                <td>Perempuan</td> <!-- Isi sel tabel: Perempuan -->
+                <td>492.107 jiwa</td> <!-- Isi sel tabel: jumlah -->
+            </tr> 
+                <td>3</td> <!-- Isi sel tabel: nomor 3 -->
+                <td>Total</td> <!-- Isi sel tabel: Total -->
+                <td>980.269 jiwa</td> <!-- Isi sel tabel: jumlah total (ada salah ketik: 'jiw' seharusnya 'jiwa') -->
+        </table> <!-- Penutup tabel -->
         <hr>
 
         <!--List Kecamatan-->
-        <h4>Kecamatan</h4>
-            <ol>
-                <li>Bambanglipuro</li>
+        <h4>Kecamatan</h4> <!-- Heading level 4 -->
+            <ol> <!-- list bernomor -->
+                <li>Bambanglipuro</li> <!-- Item list -->
                 <li>Banguntapan</li>
                 <li>Bantul</li>
                 <li>Dlingo</li>
@@ -66,8 +70,23 @@
                 <li>Sanden</li>
                 <li>Sedayu</li>
                 <li>Sewon</li>
-                <li>Srandakan
-            </ol>
-    </main>
-</body>
-</html>
+                <li>Srandakan</li> <!-- Item list terakhir -->
+            </ol> <!-- Penutup list bernomor -->
+
+            <hr>
+
+            <!--Link-->
+            <a href="https://www.bantulkab.go.id/" target="_blank" rel="noopener noreferrer" title="Klik Untuk Membuka Website">Website Bantul</a> <!--(Baru)-->
+
+            <hr>
+
+            <!--Image-->
+            <img src="https://dpmpt.bantulkab.go.id/web/view_image/images/1618814584_gerbang%20srandakan.jpg" alt="Ini Harusnya Gambar" height="200px" title="Bantul"> <!--Baru-->
+
+            <hr>
+            
+            <!--Iframe-->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YqgyMCLLwyM?si=DEQnE9qaFSCRhOqu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </main> <!-- Penutup elemen main -->
+</body> <!-- Penutup body -->
+</html> <!-- Penutup HTML -->
